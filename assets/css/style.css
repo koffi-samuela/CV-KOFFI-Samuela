@@ -1,0 +1,636 @@
+html
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: "Autography";
+  src: url("../autography/Autography.otf") format("opentype");
+  src: url("") format("opentype");
+}
+/* @font-face {
+  font-family: "hotsnow";
+  src: url("../hotsnow/Hotsnowfreevertion-Regular.ttf") format("opentype");
+  src: url("") format("opentype");
+} */
+body{
+  background-attachment: fixed;
+  /* background: url(../ressources/images/R\ \(1\).gif); */
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.974);
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.nav-head{
+  background-color: #0303031e;
+  transition: background-color 2s ease-out;
+  /* border-bottom: 1px #FF2E00 solid; */
+  /* color: white; */
+}
+.nav-head:hover{
+  background-color: #000000;
+}
+.nav-head a{
+  /* background-color: #03030381; */
+  color: white !important;
+  font-weight:700 !important;
+}
+.nav-head a:hover{
+  color: #FF2E00 !important;
+  /* transform: scale(1,1); */
+}
+main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: bisque; */
+    background: url(../ressources/images/Group\ 44\ copie.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+main .headName{
+    text-align:center;
+    position: relative;
+    top: 190px;
+}
+
+.headName h1{
+    position: relative;
+    font-family: "hotsnow";
+    /* top: 190px; */
+    /* margin-left: auto; 
+     margin-right: auto;
+    margin-top: 50px;  */
+  /* font-family: "Autography"; */
+    font-size: 80px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    /* font-family: 'Oswald', sans-serif; */
+}
+.headName h1{
+  font-weight: bolder;
+  letter-spacing: 1px;   
+  background: linear-gradient( 90DEG,rgb(255, 255, 255), rgb(236, 236, 236), rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  background-size: 87%;
+  animation: animate 8s  forwards;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+  background-position: -500%;
+  }
+  100% {
+  background-position: 0%; 
+  }
+
+}
+.headName p{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+#presentation{
+    height: 70vh;
+    width: 100%;
+    margin: 5% 0;
+}
+.img-wrapper img{
+  object-fit: cover;
+}
+#presentation h2,#SKILLS h2,#Projets h2,#Projets2 h2{
+    padding: 10px;
+    border-bottom: 1px #FF2E00 solid;
+}
+#SKILLS h2{
+  padding: 10px;
+  border-bottom: 1px #FF2E00 solid;
+}
+.aboutMe{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.about h3{
+  margin-bottom: 10px;
+}
+ .about{
+    padding: 25px;
+    width: 40%;
+    text-align: start;
+    border-bottom: 1px #ffffff solid ;
+
+}
+#SKILLS p{
+text-align: center;
+margin: 10px 0;
+font-weight: 600;
+}
+#SKILLS img:hover{
+  transform: scale(0.9);
+}
+
+.skillsdesign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    margin: 3% 0;
+
+}
+.imgDesign{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 35px;
+  border: 1px #FF2E00 solid ;
+
+}
+.nameskills1,.nameskills2,.nameskills3{
+    padding: 20px 35px;
+    border-bottom: 2px #FF2E00 solid ;
+}
+.line1, .line2{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  align-items: center;
+}
+.skillsweb{
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 80vh;
+    background-image: url(../ressources/images/Group\ 48.png);
+    background-attachment: fixed;
+}
+.square{
+  padding: 30px 45px;
+  border: 2px #FF2E00 solid ;
+}
+.skillsback{
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-image: url(../ressources/images/Group\ 45\ copie.png);
+    background-attachment: fixed;
+}
+.imgBack{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 45px;
+  border: 2px #FF2E00 solid ;
+  
+}
+.highschool, .university{
+    width: 30%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    height: 30vh;
+    margin: 15px 0;
+}
+.highschool{
+  background-image: url(../ressources/images/Group\ 37.png);
+  background-size: cover;
+  border: white 3px solid;
+}
+.university{
+  background-image: url(../ressources/images/Group\ 40.png);
+  background-size: cover;
+  border: white 3px solid;
+
+}
+#Parcours{
+    margin-top: 5%;
+}
+#Parcours h2, .project h2, #Hobbies h2{
+  border-left: 5px white solid;
+  padding-left: 10px;
+  margin-left: 5px;
+}
+.parcours h3{
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.parcours{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    padding: 25px 5px;
+}
+/* #Projets,#Projet2{
+  background-color: darkcyan;
+  margin: 3% 0;
+}
+#Projets h3,#Projets2 h3{
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+#Projets p,#Projets2 p{
+  margin: 10px 0;
+  font-size: 22px;
+}
+.projectsDesign,.projectsWeb {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+}
+.projectsDesign p,.projectsWeb p{
+font-size: 20px;
+font-weight: 500;
+}
+#Projets button, #Projets2 button{
+  color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: white;
+    border: #000000 1px solid;
+}
+#Projets button:hover, #Projets3 button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+    border: #ffffff 1px solid;
+
+}
+#Projets2{
+  display: none;
+} */
+/* .project h2{
+  margin: 25px 0;
+  border-bottom: 1px #ff2f00 solid;
+
+
+} */
+.project{
+  margin: 25px 0;
+}
+#PROJET p{
+ margin: 10px 0;
+ font-size:20px;
+ text-align: center;
+}
+#PROJET img {
+  object-fit: cover;
+}
+#PROJET a {
+  text-decoration: none;
+}
+#PROJET{
+  display: flex;
+  overflow-x: hidden;
+}
+#test div {
+  margin: 0 20px;
+}
+#test div img {
+  width : 550px;
+  height : 350px;
+  transform:  all 0.5s ease-in;
+}
+#test div img:hover {
+  transform: scale(0.95);
+}
+.seemore{
+  width: 18%;
+  display: block;
+  margin: 0 auto;
+}
+#test{
+  display: flex;
+ animation: slide 50s linear infinite;
+}
+@keyframes slide {
+  0%{
+      transform: translate(0, 0);
+  }
+  100%{
+      transform: translate(-100%, 0);
+  }
+}
+  #Hobbies{
+    margin: 3vh 0;
+  }
+.Elementhobbies{
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh 0;
+}
+.hobbies{
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-bottom: 0.5px #FF2E00 solid ;
+  
+}
+  .column1 p , .column2 p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    }
+    .column3 p{
+        font-weight: bold;
+        text-align: center;
+    }
+    .column3 .send{
+        text-align: center;
+        margin-left: 70px;
+    }
+    .column3 button {
+        font-family: inherit;
+        font-size: 20px;
+        background: royalblue;
+        color: white;
+        padding: 0.5em 1em;
+        padding-left: 0.9em;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.2s;
+      }
+      
+      .column3 button span {
+        display: block;
+        margin-left: 0.3em;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .column3 button svg {
+        display: block;
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .column3 button:hover .svg-wrapper {
+        animation: fly-1 0.6s ease-in-out infinite alternate;
+      }
+      
+      .column3 button:hover svg {
+        transform: translateX(1.2em) rotate(45deg) scale(1.1);
+      }
+      
+      .column3 button:hover span {
+        transform: translateX(5em);
+      }
+      
+      .column3 button:active {
+        transform: scale(0.95);
+      }
+      
+      @keyframes fly-1 {
+        from {
+          transform: translateY(0.1em);
+        }
+      
+        to {
+          transform: translateY(-0.1em);
+        }
+      }
+      
+    .footerElements{
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+        padding: 25px;
+        background-color: #1d1e1fa9;
+    } 
+    footer .copyright {
+        margin: 0;
+        color: white;
+        text-align: center;
+        /* padding: 10px 0; */
+        background-color: rgba(0, 0, 0, 0.488);
+        padding: 10px 0;
+    }
+    footer .signature p{
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      font-family: "Autography";
+      font-size: 10px;
+    } 
+    footer .copyright p{
+        padding: 5px 0;
+    
+    }
+    .column1,.column2,.column3{
+        margin: 50px ;
+    }
+    @media screen and (max-width: 1050px) and (min-width: 768px){
+      main{
+        width: auto;
+        height: 55vh;
+    }
+    .headName h1{
+      /* font-weight: bolder;
+      letter-spacing: 1px;   
+      background: linear-gradient( 90DEG,rgb(255, 255, 255), rgb(236, 236, 236), rgb(255, 255, 255)); */
+      /* background-repeat: no-repeat; */
+      background-size: 92%;
+      /* animation: animate 8s  forwards;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0); */
+    }
+    #presentation{
+      height: 40vh;
+  }
+  .skillsweb{
+    flex-direction: column;
+    width: auto;
+    height: 60vh;
+    background-size: contain;
+  }
+  .skillsdesign{
+    height: 45vh;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .skillsback{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 45vh;
+  }
+  .highschool, .university{
+    width: 40vw;
+    text-align: center;
+    padding: 30px;
+    height: 15vh;
+  
+  }
+  #Projets{
+    display: none;
+  }
+  .projectsDesign,.projectsWeb {
+      text-align: center;
+      flex-direction: column;
+  }
+  .projectsDesign p,.projectsWeb p{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  #Projets2{
+    display: inherit;
+  }
+  .column1,.column2,.column3{
+    margin: 20px ;
+}
+  .column3 .send{
+    margin-left: 55px;
+  }
+
+    }
+
+    
+    @media screen and (max-width: 768px){
+      .headName h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+    .headName p{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    main{
+      width: auto;
+      height: 60vh;
+      background-size: cover;
+  }
+  main .headName{
+      text-align:center;
+      position: relative;
+      top: 150px;
+  }
+  #presentation{
+    height: 99vh;
+}
+  .aboutMe{
+    margin: 20px 0;
+    flex-direction: column;
+}
+.about{
+  padding: 25px;
+  width: auto;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+.skillsweb{
+  flex-direction: column;
+  width: auto;
+}
+.line1, .line2{
+  flex-direction: column;
+}
+.skillsweb{
+  height: 150vh;
+}
+.line2{
+  display: none;
+}
+.skillsweb{
+  height: 110vh;
+}
+
+.skillsdesign{
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+
+}
+.imgDesign{
+  flex-direction: column;
+  align-items: center;
+
+}
+.skillsback{
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 120vh;
+}
+.imgBack{
+flex-direction: column;
+justify-content: space-around;
+}
+.python img {
+margin-left: 20px;
+}
+ .php iconify-icon{
+  margin-left: 20px;
+  margin-top: 10px;
+
+  }
+.parcours{
+  flex-direction: column;
+  align-items: center;
+}
+.highschool, .university{
+  width: 80vw;
+  text-align: center;
+  padding: 40px 30px;
+  height: 25vh;
+
+}
+#test div img {
+  width : 350px;
+  height : 250px;
+}
+.seemore{
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+}
+#Projets{
+  display: none;
+}
+.projectsDesign,.projectsWeb {
+    text-align: center;
+    flex-direction: column;
+}
+.projectsDesign p,.projectsWeb p{
+font-size: 20px;
+font-weight: 500;
+}
+#Projets2{
+  display: inherit;
+}
+.Elementhobbies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+
+.footerElements{
+  flex-direction: column;
+}
+.column1,.column2,.column3{
+  margin: 30px 0 ;
+}
+ .column3 .send{
+  margin-left: 60px;
+}
+    }
